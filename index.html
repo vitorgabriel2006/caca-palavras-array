@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Caça-Palavras</title>
+</head>
+
+<body>
+
+	<center>
+	
+		
+		
+	
+
+    <h1> caça-palavras </h1>
+    <p>
+     <h3> Tema: Times de Futebol </h1>
+
+<div class="caca">
+
+        <script>
+         
+
+            matriz = new Array
+            matriz = [["a", "f", "l", "a", "m", "e", "n", "g", "o", "g", "j", "v", "c", "p", "b", "a", "f"], ["k", "a", "w", "q", "f", "x", "a", "g", "b", "n", "m", "a", "o", "a", "m", "r", "j"], ["h", "s", "y", "m", "n", "o", "v", "g", "d", "f", "q", "w", "r", "l", "h", "s", "i"], ["h", "d", "s", "r", "t", "y", "u", "l", "a", "q", "e", "f", "i", "m", "h", "e", "h"], ["l", "a", "g", "r", "e", "m", "i", "o", "o", "r", "e", "w", "n", "e", "h", "n", "r"], ["l", "k", "a", "q", "r", "t", "c", "s", "a", "l", "h", "g", "t", "i", "h", "a", "w"], ["t", "y", "a", "q", "c", "r", "u", "z", "e", "i", "r", "o", "h", "r", "f", "l", "s"], ["y", "q", "w", "f", "u", "k", "l", "s", "a", "q", "w", "x", "i", "a", "h", "g", "x"], ["q", "w", "c", "x", "i", "l", "h", "f", "s", "a", "r", "t", "a", "s", "g", "c", "m"], ["t", "q", "x", "z", "a", "j", "ç", "g", "s", "a", "e", "r", "n", "y", "a", "s", "s"], ["u", "a", "q", "w", "b", "r", "w", "x", "c", "n", "m", "a", "s", "l", "h", "s", "k"], ["q", "w", "n", "m", "a", "o", "x", "a", "m", "n", "q", "w", "s", "a", "k", "f", "b"], ["l", "s", "a", "n", "t", "o", "s", "g", "d", "k", "l", "q", "v", "b", "x", "p", "c"], ["a", "q", "v", "s", "k", "p", "y", "e", "f", "d", "a", "f", "g", "f", "f", "o", "z"], ["h", "c", "h", "a", "p", "e", "c", "o", "e", "n", "s", "e", "r", "p", "o", "q", "x"], ["u", "i", "q", "w", "a", "v", "s", "d", "f", "a", "p", "o", "e", "w", "m", "n", "k"], ["b", "a", "y", "e", "r", "d", "e", "m", "u", "n", "i", "c", "h", "q", "w", "p", "h"]]
+           
+            
+            
+            
+             // ['flamengo', 'palmeiras', 'corinthians', 'arsenal', 'gremio', 'chapecoense', 'bayerdemunich', 'cuiaba', 'santos', 'cruzeiro' ]
+
+             
+
+             document.write("<table>");
+
+            for (linha = 0; linha < 17; linha++) {
+                document.write("<tr>");
+                for (coluna = 0; coluna < 17; coluna++) {
+                    if((linha == 0) && ((coluna >= 1) && (coluna <= 8))){
+                        document.write ("<td class='color'>" + matriz[linha][coluna] + "</td>");
+                    }
+                else if ((linha == 4) && ((coluna >= 2) && (coluna <= 7))) {
+                      document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+                  }
+                  else if ((linha == 12) && ((coluna >= 1) &&(coluna <= 6))){
+                    document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+
+                  }
+                  else if ((linha == 14) && ((coluna >= 1) &&(coluna <= 11))){
+                    document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+
+                  }
+                  else if ((linha == 16) && ((coluna >= 0) &&(coluna <= 12))){
+                    document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+
+                  }
+                  else if ((linha == 6) && ((coluna >= 4) &&(coluna <= 11))){
+                    document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+
+                  }
+                  else if ((coluna == 4) && ((linha >= 6) &&(linha <= 11))){
+                    document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+
+                  }
+                  else if ((coluna == 12) && ((linha >= 0) &&(linha <= 10))){
+                    document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+
+                  }
+                  else if ((coluna == 13) && ((linha >= 0) &&(linha <= 8))){
+                    document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+
+                  }
+                  else if ((coluna == 15) && ((linha >= 0) &&(linha <= 6))){
+                    document.write("<td class='color'>" + matriz[linha][coluna] + "</td>");
+
+                  }
+                  else{
+                    document.write("<td>" + matriz [linha][coluna] + "</td>")
+                  }
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+
+        
+	
+	
+         
+        
+        
+         
+
+      
+        </script>
+        </div>
+        <h5> Vitor Gabriel 1B DS </h5>
+    </center>
+
+    
+
+
+</body>
+
+</html>

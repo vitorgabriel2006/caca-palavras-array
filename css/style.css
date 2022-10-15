@@ -1,0 +1,26 @@
+table, tr, td{
+	border: 1px solid;
+}
+
+td{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.color{
+	color:#000000;
+	background-color: rgb(0,255,255);
+}
+
+body{
+	background-color: #00FFFF;
+}
+
+.caca{
+	background-color: #ffffff;
+	width: 30%;
+	height: 30%;
+	
+}
